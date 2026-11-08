@@ -2,34 +2,144 @@
 <html lang="ms" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UIS × UMMI | A Journey to Remember</title>
+    <title>UIS × UMMI | A Journey to Remember — Kolaborasi &amp; Kenangan Indah</title>
     
     <!-- Primary Meta Tags -->
-    <meta name="title" content="UIS × UMMI | A Journey to Remember" />
-    <meta name="description" content="A collection of memories, shared experiences, and heartfelt appreciation from Universitas Muhammadiyah Sukabumi to Universiti Islam Selangor." />
-    <meta name="theme-color" content="#076b73" />
+    <meta name="title" content="UIS × UMMI | A Journey to Remember — Kolaborasi &amp; Kenangan Indah" />
+    <meta name="description" content="Dokumentasi resmi kenangan, pertukaran pengalaman berharga, dan ikatan ukhuwah antarabangsa antara Universiti Islam Selangor (UIS) dan Universitas Muhammadiyah Sukabumi (UMMI)." />
+    <meta name="keywords" content="UIS, UMMI, Universiti Islam Selangor, Universitas Muhammadiyah Sukabumi, UIS x UMMI, UIS UMMI, A Journey to Remember, Kolaborasi Internasional, Pertukaran Mahasiswa, Mobilitas Antarabangsa, Student Exchange, Sukabumi, Selangor, Malaysia Indonesia, Ukhuwah Serumpun, BIPA UMMI, HMIF UMMI, BEM FSAINTEK, Kenangan UIS UMMI, Dokumentasi Mahasiswa Serumpun" />
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ummi-uis.edu/" />
-    <meta property="og:title" content="UIS × UMMI | A Journey to Remember" />
-    <meta property="og:description" content="A collection of memories, shared experiences, and heartfelt appreciation from Universitas Muhammadiyah Sukabumi to Universiti Islam Selangor." />
-    <meta property="og:image" content="/images/hero/hero-bg.webp" />
+    <!-- Authors & Credits Meta Tags -->
+    <meta name="author" content="Muhamad Mulqi A.A.R, Rafi Akmal Permana" />
+    <meta name="creator" content="Muhamad Mulqi A.A.R" />
+    <meta name="designer" content="Muhamad Mulqi A.A.R" />
+    <meta name="publisher" content="Universitas Muhammadiyah Sukabumi &amp; Universiti Islam Selangor" />
+    <meta name="generator" content="Vite + React + Tailwind CSS" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="UIS × UMMI | A Journey to Remember" />
-    <meta property="twitter:description" content="A collection of memories, shared experiences, and heartfelt appreciation from Universitas Muhammadiyah Sukabumi to Universiti Islam Selangor." />
-    <meta property="twitter:image" content="/images/hero/hero-bg.webp" />
+    <!-- Crawlers & Search Engines -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://uis.hmifummi.my.id/" />
+    
+    <!-- Mobile & PWA Theme -->
+    <meta name="theme-color" content="#076b73" />
+    <meta name="application-name" content="UIS × UMMI" />
+    <meta name="apple-mobile-web-app-title" content="UIS × UMMI" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="UIS × UMMI | A Journey to Remember" />
+    <meta property="og:url" content="https://uis.hmifummi.my.id/" />
+    <meta property="og:title" content="UIS × UMMI | A Journey to Remember — Kolaborasi &amp; Kenangan Indah" />
+    <meta property="og:description" content="Dokumentasi resmi kenangan, pertukaran pengalaman berharga, dan ikatan ukhuwah antarabangsa antara Universiti Islam Selangor (UIS) dan Universitas Muhammadiyah Sukabumi (UMMI)." />
+    <meta property="og:image" content="https://uis.hmifummi.my.id/images/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://uis.hmifummi.my.id/images/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="UIS × UMMI - A Journey to Remember — Kenangan Kolaborasi Bersama" />
+    <meta property="og:locale" content="ms_MY" />
+    <meta property="og:locale:alternate" content="id_ID" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UIS × UMMI | A Journey to Remember — Kolaborasi &amp; Kenangan Indah" />
+    <meta name="twitter:description" content="Dokumentasi resmi kenangan, pertukaran pengalaman berharga, dan ikatan ukhuwah antarabangsa antara Universiti Islam Selangor (UIS) dan Universitas Muhammadiyah Sukabumi (UMMI)." />
+    <meta name="twitter:image" content="https://uis.hmifummi.my.id/images/og-image.jpg" />
+    <meta name="twitter:image:alt" content="UIS × UMMI - A Journey to Remember" />
+    <meta name="twitter:creator" content="@mhmd_mqone" />
+
+    <!-- Structured Data (JSON-LD) for Rich Google Search Results & Knowledge Graph -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://uis.hmifummi.my.id/#website",
+          "url": "https://uis.hmifummi.my.id/",
+          "name": "UIS × UMMI | A Journey to Remember",
+          "description": "Dokumentasi resmi kenangan, pertukaran pengalaman berharga, dan ikatan ukhuwah antarabangsa antara Universiti Islam Selangor dan Universitas Muhammadiyah Sukabumi.",
+          "inLanguage": ["ms-MY", "id-ID"],
+          "publisher": {
+            "@type": "Organization",
+            "name": "Universitas Muhammadiyah Sukabumi & Universiti Islam Selangor",
+            "url": "https://ummi.ac.id"
+          },
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Muhamad Mulqi A.A.R",
+              "jobTitle": "Lead Developer & UI/UX Designer",
+              "sameAs": ["https://www.instagram.com/mhmd.mqone"]
+            },
+            {
+              "@type": "Person",
+              "name": "Rafi Akmal Permana",
+              "jobTitle": "Idea & Concept Initiator",
+              "sameAs": ["https://www.instagram.com/raftttttt__?xtok=dmk1MDJsZzNwZ2Ru"]
+            }
+          ],
+          "contributor": [
+            {
+              "@type": "Organization",
+              "name": "Himpunan Mahasiswa Teknik Informatika (HMIF) UMMI",
+              "jobTitle": "Media & Photography",
+              "sameAs": ["https://www.instagram.com/hmif_ummi/"]
+            }
+          ]
+        },
+        {
+          "@type": "Event",
+          "@id": "https://uis.hmifummi.my.id/#event",
+          "name": "UIS × UMMI: A Journey to Remember",
+          "description": "Program mobilitas antarabangsa dan pertukaran budaya mahasiswa Universiti Islam Selangor (UIS) di kampus Universitas Muhammadiyah Sukabumi (UMMI).",
+          "startDate": "2026-10-01",
+          "endDate": "2026-10-31",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Universitas Muhammadiyah Sukabumi (UMMI)",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sukabumi",
+              "addressRegion": "Jawa Barat",
+              "addressCountry": "ID"
+            }
+          },
+          "organizer": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Universitas Muhammadiyah Sukabumi",
+              "url": "https://ummi.ac.id"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Universiti Islam Selangor",
+              "url": "https://uis.edu.my"
+            }
+          ],
+          "image": "https://uis.hmifummi.my.id/images/og-image.jpg"
+        }
+      ]
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-BVIq_l6m.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DWTCKUxs.css">
+    <script type="module" crossorigin src="/assets/index-DUnYugGk.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BmlQLZ2v.css">
   </head>
   <body class="bg-white text-neutral-800 font-sans antialiased selection:bg-[#076b73] selection:text-white overflow-x-hidden">
     <div id="root"></div>
